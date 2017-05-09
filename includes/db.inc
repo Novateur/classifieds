@@ -1,9 +1,9 @@
 <?php
 	try{
-		$server = 'localhost';
-		$dbname = 'classified';
+		$server = 'localhost:8889';
+		$dbname = 'classifieds';
 		$username = 'root';
-		$password = '';
+		$password = 'root';
 		$connection = new PDO("mysql:host=$server;dbname=$dbname",$username,$password);
 		$connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 	}
